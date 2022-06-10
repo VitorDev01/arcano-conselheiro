@@ -1,0 +1,184 @@
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title></title>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap');
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+      
+        body {
+          
+          background-color:  #5D14A6;
+        }
+        img {
+          height: 450px;
+          width: 100%;
+          
+          
+        }
+        p {
+          font-family: 'Yusei Magic', sans-serif;
+          font-size: 26px;
+          text-align: justify;
+          text-align: center;
+          word-spacing: 1px;
+          color:#fff;
+          margin: 15px;
+        }
+        h1 {
+          font-family: 'Yusei Magic', sans-serif;
+          font-size: 25px;
+          text-align: justify;
+          text-align: center;
+          word-spacing: 1px;
+          color:#F25C05;
+          margin: 15px;
+          background-color: #fff;
+          border-radius: 15px;
+          
+        }
+        
+        input {
+          height: 50px;
+          width: 270px;
+          margin: 65px;
+          border-radius: 15px;
+          background-color: #5D14A6;
+          border-color: #F25C05 ;
+          font-family: 'Yusei Magic', sans-serif;
+          font-size: 10px;
+          color: #fff;
+          outline: none;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          
+        }
+        
+        input:hover {
+          background-color:#F25C05 ;
+        }
+        
+        #v {
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 100px;
+          
+        }
+        
+        a {
+          text-decoration-color: #F25C05;
+        }
+        
+        hr {
+          background-color: #fff;
+        }
+        
+        #fundo {
+          height: 50px;
+          background-color: #fff;
+        }
+        
+    </style>
+  </head>
+    <body>
+      
+      <h1>Arcano Conselheiro</h1>
+      <hr>
+      <input type="button" value="Aperte 10 vezes até o conselho" onClick="window.location.reload()">
+      
+      <p>E pense em uma pergunta de SIM ou NÃO :)</p>
+
+      <script>
+      var nipes = [ '<img src="car.png"><p> É preciso ter diretriz e observar continuamente a meta almejada, não desista e vá em frente!. A resposta para sua pergunta é SIM!</p>'
+      
+      , '<img src="death.png"><p>É necessário abrir espaço para que o novo entre. Pode parecer dolorido, mas ao desapegar novas oportunidades aparecerão. A resposta para sua pergunta é NÃO!</p>'
+      
+      , '<img src="aranha.png"><p>O mundo lhe oferta a oportunidade rara de uma mudança das estações internas. De observar a vida sob uma nova perspectiva, de mudar um olhar já viciado e deixar de insistir em padrões que não funcionam. A resposta para sua pergunta é NÃO!</p>' 
+      
+      , '<img src="amores.png"><p>Durante uma tomada de decisão também é interessante pensar sobre o que você considera importante na sua vida e o que não te acrescenta nada. Tente ser o mais honesto possível consigo mesmo. A resposta para sua pergunta é TALVEZ :1 faça novamente.</p>'
+      
+      
+      
+      , '<img src="sa.png"><p>Neste momento o melhor que você pode fazer é se calar, guardar para si os objetivos. A resposta para sua pergunta é SIM!</p>'
+      
+      
+      , '<img src="imperador.png"><p>Estabilidade, estrutura e foco são necessários para transformar suas idéias e sonhos em realidade. A resposta para sua pergunta é SIM!</p>', 
+      
+      
+      ' <img src="devil.png"><p>Se você não dominar seus vícios ele irão te controlar. A resposta pra sua pergunta é Não!.</p>',
+      
+      
+      '<img src="mundo.png"><p>Reflita sua jornada até aqui, relembre todos os passos que deu e desafios que venceu para alcançar seus objetivos. A resposta para sua pergunta é SIM!</p>',
+      
+      
+      '<img src="torre.png"><p>Está na hora de cair na real sobre uma situação, Mudanças profundas podem acontecer. A resposta para sua pergunta é NÃO!</p>', 
+      
+      
+      '<img src="força.png"><p>Você tem mais força que imagina para vencer qualquer desafio ou adversidades que vida coloca na sua frente. A resposta para sua pergunta é SIM!</p>',
+      
+      
+      '<img src="sol.png"><p>Tente enxergar as coisas de uma forma mais clara e realista. A resposta para sua pergunta é SIM!</p>',
+      
+      
+      '<img src="Temperança.png"><p>Vamos evitar dores de cabeça e stress equilíbre as coisas dentro de você sentimentos quanto pensamentos. A resposta pra sua pergunta é SIM!</p>', 
+      
+      
+      '<img src="roda.png"><p>Já te falaram que a vida é feita de altos e baixos? O mundo ainda tem muitas voltas para dar. A resposta para sua pergunta é SIM!',
+      
+      
+      '<img src="papa.png"><p>Apenas Acredite (FÉ). A resposta para sua pergunta é SIM!</p>',
+      
+      
+      '<img src="mulher.png"><p>Se importe mais com você e não com a opinião alheia. A resposta para sua pergunta é SIM!</p>', 
+      
+      
+      '<img src="mago.png"><p>Seja firme e retome o controle das coisas. A resposta para sua pergunta é SIM!</p>', 
+      
+      
+      '<img src="lua.png"><p>Dê ouvidos a sua intuição. A resposta para sua pergunta é NÃO!</p>', 
+      
+      
+      '<img src="louco.png"><p>Não dê uma de louco para não se arrepender depois tenha prudência. resposta para sua pergunta é SIM!</p>', 
+      
+      
+      '<img src="justiça.png"><p>Seja justo não só com as pessoas mais com você mesmo. A resposta para sua pergunta é SIM!</p>', 
+      
+      
+      '<img src="julgamento.png"><p>Avalie suas atitudes a consciência é muito acusadora e costuma nem te deixar dormir. A resposta para sua pergunta é TALVEZ faça novamente.</p>',
+      
+      
+      '<img src="eremita.png"><p>Tenha um momento consigo mesmo. A resposta para sua pergunta é SIM!</p>',
+      
+      
+      '<img="star.png"><p>Tenha Esperança. A resposta para sua pergunta é SIM!</p>' ]; 
+      
+      
+      var nipe = nipes [ Math.floor ( Math.random ( ) * 21) ]; 
+      
+      document.write( nipe );
+     
+      </script>
+      <hr>
+      <br>
+      <br>
+      <a href="https://vitordev01.netlify.app/">
+      <p>Sobre o criador da página</p></a>
+        
+      <img id="v" title="Vitor" src="https://raw.githubusercontent.com/VitorDev01/about-me-4.1/main/v.jpg">
+     
+      <hr>
+      <a href="https://www.behance.net/franx"><p>Créditos ao criador das Artes</p></a>
+     
+      <hr>
+      <h1>&copy:Vitordev01 2022 GitHub Pages</h1>
+    </body>
+</html>
